@@ -1,0 +1,62 @@
+/*responsive celular*/
+@media only screen and (min-width:280px) and (max-width:480px) {
+    /* Solo mobile  */
+    /*header*/
+
+.calculadora-grilla{
+    display: grid;
+    justify-content:space-around;
+    align-content: center;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(30px,auto) repeat(5, 75px);    
+}
+
+
+.calculadora-grilla > button{
+    cursor: pointer;
+    font-size: .9rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: #3D5162;
+    margin-top:1rem;
+    
+}
+
+button{
+    color: white;
+   
+}
+
+.calculadora-grilla .pantalla{
+    border-radius: 20px;
+    padding: 1px;
+    width: 60%;
+    margin-top: 5px;
+}
+
+
+.pantalla-salida{
+    grid-column: 1 / -1;
+    background-color: #0F121A;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    flex-direction: column;
+    padding: 5px; 
+    
+}
+
+.pantalla-salida .pantalla{
+    color: white;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+
+.calculadora-grilla >button:hover{
+    background-color: rgba(36, 122, 114, 0.9);
+}
+
+
+}

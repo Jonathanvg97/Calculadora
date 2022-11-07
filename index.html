@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraJV</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" media="only screen and (max-width: 640px)" href="movil.css"/>
+    <script src="https://kit.fontawesome.com/a1295e2070.js" crossorigin="anonymous"></script>    
+</head>
+
+<body>
+   
+    <div class="calculadora-grilla">
+        <div class="pantalla-salida">
+            <label id="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        <input class="pantalla" type="text" id="resultado" placeholder="0">
+        </div>
+        <button name="datos-numeros">1</button>
+        <button name="datos-numeros">2</button>
+        <button name="datos-numeros">3</button>
+        <button name="datos-operaciones">+</button>
+        <button name="datos-numeros">4</button>
+        <button name="datos-numeros">5</button>
+        <button name="datos-numeros">6</button>
+        <button name="datos-operaciones">-</button>
+        <button name="datos-numeros">7</button>
+        <button name="datos-numeros">8</button>
+        <button name="datos-numeros">9</button>
+        <button name="datos-operaciones">/</button>
+        <button name="datos-numeros">0</button>
+        <button name="datos-igual">=</button>
+        <button name="datos-operaciones">*</button>
+        <button name="datos-numeros">.</button>
+        <button name="datos-borrar">C</button>
+        <button name="datos-borrar-ultimo">DEL</button>
+    </div>
+    <script src="calculadora.js"></script> <!-- vincular javascript en el html  -->
+</body>
+</html>
